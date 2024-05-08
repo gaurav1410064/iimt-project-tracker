@@ -49,4 +49,6 @@ export class MembersComponent {
       bred for hunting.`
     }
   ];
+
+  memberName!: string;
 }
