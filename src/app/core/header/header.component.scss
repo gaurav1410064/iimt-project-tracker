@@ -1,0 +1,14 @@
+.header-container {
+    display: flex;
+    padding: 15px;
+    background: hsl(222, 100%, 92%);
+    .right-header {
+        display: flex;
+        margin-left: auto;
+        .header-item {
+            button {
+                color: #005cbb;
+            }
+        }
+    }
+}

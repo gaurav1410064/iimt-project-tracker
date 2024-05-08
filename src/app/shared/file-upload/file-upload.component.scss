@@ -1,0 +1,22 @@
+.file-input {
+    display: none;
+}
+
+.file-upload {
+    display: flex;
+    align-items: center;
+    .file-name {
+        margin-right: 10px;
+        width: calc(100% - 100px);
+    }
+    button {
+        margin-left: auto;
+    }
+}
+
+.img-card {
+    margin: 10px 0;
+    img {
+        max-height: 300px;
+    }
+}

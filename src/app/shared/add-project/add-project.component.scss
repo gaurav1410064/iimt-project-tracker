@@ -1,0 +1,52 @@
+.add-project-container {
+    min-width: 400px;
+    width: 30%;
+    margin: 50px auto;
+    mat-card-header {
+        justify-content: center;
+    }
+    mat-card-content {
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    mat-card-actions {
+        justify-content: center;
+        button {
+            width: calc(100% - 100px);
+        }
+        margin-bottom: 20px;
+    }
+    .example-card {
+        max-width: 400px;
+        margin-bottom: 8px;
+      }
+}
+
+.example-right-align {
+    text-align: right;
+}
+
+input.example-right-align::-webkit-outer-spin-button,
+input.example-right-align::-webkit-inner-spin-button {
+    display: none;
+}
+
+input.example-right-align {
+    -moz-appearance: textfield;
+}
+
+.project-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    mat-form-field {
+        width: calc(100% - 50px);
+    }
+}
+.upload-image {
+    margin: 20px 0;
+    width: calc(100% - 50px);
+}

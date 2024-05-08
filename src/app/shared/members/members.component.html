@@ -1,0 +1,16 @@
+<div class="member-container">
+    <mat-card class="member-card"  *ngFor="let member of members">
+        <mat-card-header>
+            <mat-card-title>{{member.name}}</mat-card-title>
+            <mat-card-subtitle>{{member.email}}</mat-card-subtitle>
+            <mat-card-subtitle>{{member.mobNo}}</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image [src]="member.imageUrl" alt="Photo of a Shiba Inu">
+        <mat-card-content>
+            <p>
+                {{member.description}}
+            </p>
+        </mat-card-content>
+    </mat-card>
+</div>
+  

@@ -1,0 +1,23 @@
+<div class="header-container">
+    <div class="left-header">
+        <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="home" routerLink=""></mat-icon>
+    </div>
+    <div class="right-header">
+        <div class="header-item">
+            <button mat-button routerLink="login">Login</button>
+        </div>
+        <div class="header-item">
+            <button mat-button routerLink="signup">Signup</button>
+        </div>
+        <div class="header-item">
+            <button mat-button>Logout</button>
+        </div>
+        <div class="header-item">
+            <button mat-button [matMenuTriggerFor]="belowMenu">Profile</button>
+            <mat-menu #belowMenu="matMenu" yPosition="below">
+                <button mat-menu-item routerLink="add-project">Add Project</button>
+                <button mat-menu-item routerLink="add-member">Add member</button>
+            </mat-menu>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,18 @@
+<div class="home-container">
+    <mat-card class="home-card"  *ngFor="let project of projects">
+        <mat-card-header>
+            <mat-card-title>{{project.name}}</mat-card-title>
+            <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image [src]="project.imageUrl" alt="Photo of a Shiba Inu">
+        <mat-card-content>
+            <p>
+                {{project.projectDescription}}
+            </p>
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-flat-button color="primary" (click)="goToDetails()">Details</button>
+          </mat-card-actions>
+    </mat-card>
+</div>
+  

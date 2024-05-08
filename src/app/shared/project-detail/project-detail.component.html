@@ -1,0 +1,22 @@
+<div class="details-container">
+    <mat-card class="home-card">
+        <mat-card-header>
+            <mat-card-title>{{project.name}}</mat-card-title>
+            <mat-card-subtitle>{{project.teamName}}</mat-card-subtitle>
+        </mat-card-header>
+        <img class="detail-image" mat-card-image [src]="project.imageUrl" alt="Photo of a Shiba Inu">
+        <mat-card-content class="project-description">
+            <p>
+                {{project.projectDescription}}
+            </p>
+        </mat-card-content>
+        <mat-card-actions>
+            <div class="members">
+                <div class="title">
+                    <span>Team Members</span>
+                </div>
+                <app-members></app-members>
+            </div>
+        </mat-card-actions>
+    </mat-card>
+</div>

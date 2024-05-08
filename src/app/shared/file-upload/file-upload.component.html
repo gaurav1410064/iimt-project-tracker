@@ -1,0 +1,19 @@
+<input type="file" class="file-input" [accept]="requiredFileType" (change)="onFileSelected($event)" #fileUpload>
+
+<div class="file-upload">
+    <div class="file-name">
+        {{fileName || "No file uploaded yet."}}
+    </div>
+    <button mat-mini-fab color="primary" class="upload-btn" (click)="fileUpload.click()">
+        <mat-icon>attach_file</mat-icon>
+    </button>
+</div>
+
+<div class="progress">
+
+    <mat-progress-bar class="progress-bar" mode="determinate" [value]="uploadProgress" *ngIf="uploadProgress"></mat-progress-bar>
+
+</div>
+<mat-card class="img-card" *ngIf="imageUrl">
+    <img mat-card-image [src]="imageUrl" alt="Photo of a Shiba Inu">
+</mat-card>
